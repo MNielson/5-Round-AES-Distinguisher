@@ -2,7 +2,7 @@
 
 ## 8bit AES Distinguisher
 compile with:
-g++ -maes -march=native -msse -msse2 main.cpp -o <output-file>
+g++ -maes -march=native -msse -msse2 main.cpp -o output-file
 
 run by calling ./output-file
 
@@ -17,7 +17,7 @@ INTER_RES controls number of results after which an intermediary result is writt
 
 ## 6bit AES Distinguisher
 compile with:
-g++ -lpthread aes.cpp 
+g++ -lpthread aes.cpp -o output-file
 
 run by calling ./output-file number-of-cosets number-of-threads
 
