@@ -17,16 +17,18 @@ INTER_RES controls number of results after which an intermediary result is writt
 
 ## 6bit AES Distinguisher
 compile with:
-g++ -lpthread aes.cpp -o output-file
+g++ -lpthread aes.cpp cosets.cpp mt19937ar.cpp -o output-file
 
 run by calling ./output-file number-of-cosets number-of-threads
 
 Options:
 in aes6bit.h
 Nr defines the number of rounds of AES to compute. Nr 5 to use distinguisher Nr 12+ to use as random permutation
+  
 AES_keyExpSize defines size of expanded key
 
 in cosets.cpp
 USE_C_RNG 1 to use std::random for RNG
+  
 USE_C_RNG 0 to use Mersenne Twister for RNG
 
