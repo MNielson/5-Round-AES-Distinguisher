@@ -19,7 +19,7 @@ INTER_RES controls number of results after which an intermediary result is writt
 compile with:
 g++ -lpthread aes.cpp 
 
-run by calling ./output-file <number-of-cosets> <number-of-threads>
+run by calling ./output-file number-of-cosets number-of-threads
 
 Options:
 in aes6bit.h
